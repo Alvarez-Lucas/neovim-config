@@ -14,15 +14,21 @@ vim.cmd([[
 ]])
 
 return require('packer').startup(function(use)
-  -- Packer can manage itself
-  use 'wbthomason/packer.nvim'
+  
+  use 'wbthomason/packer.nvim'  -- Packer can manage itself
   use 'nvim-lua/plenary.nvim'
   use 'nvim-lua/popup.nvim'
   use 'tribela/vim-transparent'
   use 'dracula/vim'
   use 'kyazdani42/nvim-web-devicons'
   use 'kyazdani42/nvim-tree.lua'
-  -- My plugins
+  use 'hrsh7th/nvim-cmp'
+  use 'hrsh7th/cmp-buffer'
+  use 'hrsh7th/cmp-path'
+  use 'saadparwaiz1/cmp_luasnip'
+
+  use 'L3MON4D3/LuaSnip'  -- Snippet Engine
+  use 'rafamadriz/friendly-snippets' -- Snippet Collection
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins

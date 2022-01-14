@@ -1,26 +1,67 @@
 -- I Don't even know
 local opts = { noremap = true, silent = true }
 
+-- Vim Options
+local options = {
+
+  -- Line Number Options
+  number = true,
+  relativenumber = true,
+
+  
+  shiftwidth = 2,
+  -- shiftwidth = 4
+  tabstop = 2,
+
+  scrolloff = 8,
+  expandtab = true,
+
+}
+
+-- Apply options
+for option, value in pairs(options) do
+  vim.opt[option] = value
+end
+
 -- Shorten Repeated Commands
 local km = vim.api.nvim_set_keymap
-local vo = vim.opt
 local vc = vim.cmd
 
--- Line Number Options
-vo.number = true
-vo.relativenumber = true
+-- Make Words include -
+vc "set iskeyword+=-"
 
 -- Keep Selection After Indent
 vc ":vnoremap < <gv"
 vc ":vnoremap > >gv"
 
--- Remap space as leader key
+-- Remap Space As Leader Key
 km("", "<Space>", "<Nop>", opts)
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
 
--- Move text up and down
+-- Left Hand Explorer
+km("n", "<leader>e", ":Lex 30<cr>", opts)
+
+-- Resize With Arrows
+km("n", "<C-Up>", ":resize +2<CR>", opts)
+km("n", "<C-Down>", ":resize -2<CR>", opts)
+km("n", "<C-Left>", ":vertical resize -2<CR>", opts)
+km("n", "<C-Right>", ":vertical resize +2<CR>", opts)
+
+-- Move Text Up And Down
 km("x", "J", ":move '>+1<CR>gv-gv", opts)
 km("x", "K", ":move '<-2<CR>gv-gv", opts)
 km("x", "<A-j>", ":move '>+1<CR>gv-gv", opts)
 km("x", "<A-k>", ":move '<-2<CR>gv-gv", opts)
+
+-- Keep Buffer After Paste
+km("v", "p", '"_dP', opts)
+
+-- Shorten Window Navigation
+km("n", "<C-h>", "<C-w>h", opts)
+km("n", "<C-j>", "<C-w>j", opts)
+km("n", "<C-k>", "<C-w>k", opts)
+km("n", "<C-l>", "<C-w>l", opts)
+
+
+

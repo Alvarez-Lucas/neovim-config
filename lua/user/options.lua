@@ -27,6 +27,9 @@ end
 local km = vim.api.nvim_set_keymap
 local vc = vim.cmd
 
+-- Theme
+vc "colorscheme dracula"
+
 -- Make Words include -
 vc "set iskeyword+=-"
 
@@ -63,5 +66,6 @@ km("n", "<C-j>", "<C-w>j", opts)
 km("n", "<C-k>", "<C-w>k", opts)
 km("n", "<C-l>", "<C-w>l", opts)
 
-
+-- Nvim Tree
+km("n", "<leader>e", ":NvimTreeToggle<cr>", opts)
 

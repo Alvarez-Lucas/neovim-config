@@ -45,11 +45,11 @@ vim.g.mapleader = " "
 vim.g.maplocalleader = " "
 
 -- Left Hand Explorer
-km("n", "<leader>e", ":Lex 30<cr>", opts)
+-- km("n", "<leader>e", ":Lex 30<cr>", opts)
 
 -- Resize With Arrows
-km("n", "<C-Up>", ":resize +2<CR>", opts)
-km("n", "<C-Down>", ":resize -2<CR>", opts)
+km("n", "<C-Up>", ":resize -2<CR>", opts)
+km("n", "<C-Down>", ":resize +2<CR>", opts)
 km("n", "<C-Left>", ":vertical resize -2<CR>", opts)
 km("n", "<C-Right>", ":vertical resize +2<CR>", opts)
 
@@ -71,3 +71,10 @@ km("n", "<C-l>", "<C-w>l", opts)
 -- Nvim Tree
 km("n", "<leader>e", ":NvimTreeToggle<cr>", opts)
 
+-- telescope
+-- km("n", "<leader>f", "<cmd>lua require'telescope.builtin'.find_files(require('telescope.themes').get_dropdown({ previewer = false }))<cr>", opts)
+km("n", "<leader>f", "<cmd>lua require'telescope.builtin'.find_files()<cr>", opts)
+km("n", "<leader>g", "<cmd>Telescope live_grep<cr>", opts)
+km("n", "<leader>b", "<cmd>Telescope git_branches<cr>", opts)
+km("n", "<leader>a", "<cmd>Telescope lsp_references<cr>", opts)
+km("n", "<C-f>", "<cmd>Telescope current_buffer_fuzzy_find<cr>", opts)

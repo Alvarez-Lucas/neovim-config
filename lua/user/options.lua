@@ -8,13 +8,15 @@ local options = {
   number = true,
   relativenumber = true,
 
-  
   shiftwidth = 2,
   -- shiftwidth = 4
   tabstop = 2,
 
   scrolloff = 8,
+  sidescrolloff = 8,
   expandtab = true,
+
+  mouse = "a",
 
 }
 

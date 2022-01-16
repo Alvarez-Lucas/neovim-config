@@ -53,9 +53,13 @@ return require('packer').startup(function(use)
     run = "TSUpdate"
   }
   use 'p00f/nvim-ts-rainbow'
+  use 'windwp/nvim-autopairs'
+  use 'numToStr/Comment.nvim' -- Uses TS with nvim-ts-context-commentstring
+  use 'JoosepAlviste/nvim-ts-context-commentstring'
+  
+  -- GIT
+  use 'lewis6991/gitsigns.nvim'
 
-  -- Automatically set up your configuration after cloning packer.nvim
-  -- Put this at the end after all plugins
   if packer_bootstrap then
     require('packer').sync()
   end

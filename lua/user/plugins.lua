@@ -39,7 +39,7 @@ return require('packer').startup(function(use)
 
   use 'L3MON4D3/LuaSnip'         -- Snippet Engine
   use 'rafamadriz/friendly-snippets' -- Snippet Collection
-  use 'f3fora/cmp-spell'         -- Spell Check Completions
+  -- use 'f3fora/cmp-spell'         -- Spell Check Completions
 
   -- LSP
   use 'neovim/nvim-lspconfig'    -- LSP Config Boostrap
@@ -58,9 +58,12 @@ return require('packer').startup(function(use)
   use 'windwp/nvim-autopairs'
   use 'numToStr/Comment.nvim' -- Uses TS with nvim-ts-context-commentstring
   use 'JoosepAlviste/nvim-ts-context-commentstring'
-  
+
   -- GIT
   use 'lewis6991/gitsigns.nvim'
+
+  -- Dashboard
+  use 'glepnir/dashboard-nvim'
 
   if packer_bootstrap then
     require('packer').sync()

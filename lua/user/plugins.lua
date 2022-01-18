@@ -32,12 +32,14 @@ return require('packer').startup(function(use)
   use 'hrsh7th/cmp-buffer'       -- Buffer Completions
   use 'hrsh7th/cmp-path'         -- Path Completions
   use 'hrsh7th/cmp-cmdline'      -- CMD Line Completions
+
   use 'saadparwaiz1/cmp_luasnip' -- Snippet Completions
   use 'hrsh7th/cmp-nvim-lsp'     -- LSP for CMP??
   use 'hrsh7th/cmp-nvim-lua'     -- ??
 
   use 'L3MON4D3/LuaSnip'         -- Snippet Engine
   use 'rafamadriz/friendly-snippets' -- Snippet Collection
+  use 'f3fora/cmp-spell'         -- Spell Check Completions
 
   -- LSP
   use 'neovim/nvim-lspconfig'    -- LSP Config Boostrap

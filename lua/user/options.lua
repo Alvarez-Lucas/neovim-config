@@ -18,6 +18,9 @@ local options = {
 
   mouse = "a",
 
+  spell = true,
+  spelllang = { 'en_us' },
+
 }
 
 -- Apply options
@@ -76,7 +79,9 @@ km("n", "<leader>e", ":NvimTreeToggle<cr>", opts)
 km("n", "<leader>f", "<cmd>lua require'telescope.builtin'.find_files()<cr>", opts)
 km("n", "<leader>g", "<cmd>Telescope live_grep<cr>", opts)
 km("n", "<leader>b", "<cmd>Telescope git_branches<cr>", opts)
-km("n", "<leader>a", "<cmd>Telescope lsp_references<cr>", opts)
+km("n", "<leader>r", "<cmd>Telescope lsp_references<cr>", opts)
+km("n", "<leader>s", "<cmd>Telescope spell_suggest<cr>", opts)
+km("n", "gs", "<cmd>Telescope git_status<cr>", opts)
 km("n", "<C-f>", "<cmd>Telescope current_buffer_fuzzy_find<cr>", opts)
 km("n", "<leader>c", "<cmd>Gitsigns preview_hunk<cr>", opts)
 km("n", "<C-s>", "<cmd>w<cr>", opts)

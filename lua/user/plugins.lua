@@ -27,6 +27,9 @@ return require('packer').startup(function(use)
   use 'kyazdani42/nvim-web-devicons'
   use 'kyazdani42/nvim-tree.lua'
 
+  -- Status Line
+  use 'nvim-lualine/lualine.nvim'
+
   -- CMP
   use 'hrsh7th/nvim-cmp'         -- Completions Plugin
   use 'hrsh7th/cmp-buffer'       -- Buffer Completions

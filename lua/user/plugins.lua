@@ -66,7 +66,7 @@ return require('packer').startup(function(use)
   use 'lewis6991/gitsigns.nvim'
 
   -- Dashboard
-  use 'glepnir/dashboard-nvim'
+  use 'goolord/alpha-nvim'
 
   if packer_bootstrap then
     require('packer').sync()

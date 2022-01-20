@@ -21,5 +21,8 @@ dashboard.section.buttons.val = {
     dashboard.button( "s", "  > Settings" , ":e $MYVIMRC | :cd %:p:h | split . | wincmd k | pwd<CR>"),
     dashboard.button( "q", "  > Quit NVIM", ":qa<CR>"),
 }
+dashboard.section.footer.val = {
+  "Lucas Alvarez | Software Engineer",
+}
 
 alpha.setup(dashboard.opts)

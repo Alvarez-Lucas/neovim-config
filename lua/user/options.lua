@@ -18,8 +18,10 @@ local options = {
 
   mouse = "a",
 
-  spell = true,
-  spelllang = { 'en_us' },
+ -- spell = true,
+ -- spelllang = { 'en_us' },
+
+  signcolumn = 'yes',
 
 }
 
@@ -33,7 +35,9 @@ local km = vim.api.nvim_set_keymap
 local vc = vim.cmd
 
 -- Theme
-vc "colorscheme dracula"
+-- vim.g.tokyonight_style = "night"
+-- vc "colorscheme dracula"
+vc "colorscheme tokyonight"
 
 -- Make Words include -
 vc "set iskeyword+=-"
@@ -85,3 +89,4 @@ km("n", "gs", "<cmd>Telescope git_status<cr>", opts)
 km("n", "<C-f>", "<cmd>Telescope current_buffer_fuzzy_find<cr>", opts)
 km("n", "<leader>c", "<cmd>Gitsigns preview_hunk<cr>", opts)
 km("n", "<C-s>", "<cmd>w<cr>", opts)
+km("n", "<leader>y", "Telescope colorscheme", opts)

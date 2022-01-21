@@ -16,7 +16,7 @@ local options = {
   sidescrolloff = 8,
   expandtab = true,
 
-  mouse = "a",
+  -- mouse = "a",
 
  -- spell = true,
  -- spelllang = { 'en_us' },

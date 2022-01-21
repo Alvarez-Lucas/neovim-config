@@ -70,6 +70,9 @@ return require('packer').startup(function(use)
   -- Dashboard
   use 'goolord/alpha-nvim'
 
+  -- Floating Terminal
+  use 'akinsho/toggleterm.nvim'
+
   if packer_bootstrap then
     require('packer').sync()
   end

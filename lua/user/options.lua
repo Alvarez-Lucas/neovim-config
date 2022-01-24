@@ -47,6 +47,7 @@ vc "set colorcolumn=80"
 
 -- Cursor line
 vim.wo.cursorline = true
+-- vim.optcursorline = "both"
 
 -- Keep Selection After Indent
 vc ":vnoremap < <gv"

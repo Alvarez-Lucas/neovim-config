@@ -42,6 +42,9 @@ vc "colorscheme tokyonight"
 -- Make Words include -
 vc "set iskeyword+=-"
 
+-- 80 Mark Color Column
+vc "set colorcolumn=80"
+
 -- Keep Selection After Indent
 vc ":vnoremap < <gv"
 vc ":vnoremap > >gv"

@@ -45,6 +45,9 @@ vc "set iskeyword+=-"
 -- 80 Mark Color Column
 vc "set colorcolumn=80"
 
+-- Cursor line
+vim.wo.cursorline = true
+
 -- Keep Selection After Indent
 vc ":vnoremap < <gv"
 vc ":vnoremap > >gv"

@@ -20,7 +20,7 @@ return require('packer').startup(function(use)
   use 'nvim-lua/popup.nvim'
 
   -- Theming
-  use 'tribela/vim-transparent'
+  -- use 'tribela/vim-transparent'
   use 'dracula/vim'
   use 'luisiacc/gruvbox-baby'
   use 'folke/tokyonight.nvim'
@@ -72,6 +72,9 @@ return require('packer').startup(function(use)
 
   -- Floating Terminal
   use 'akinsho/toggleterm.nvim'
+
+  -- Indent Guides
+  use 'lukas-reineke/indent-blankline.nvim'
 
   if packer_bootstrap then
     require('packer').sync()

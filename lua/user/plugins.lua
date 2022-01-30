@@ -20,10 +20,15 @@ return require('packer').startup(function(use)
   use 'nvim-lua/popup.nvim'
 
   -- Theming
-  use 'tribela/vim-transparent'
+  -- use 'tribela/vim-transparent'
   use 'dracula/vim'
   use 'luisiacc/gruvbox-baby'
   use 'folke/tokyonight.nvim'
+  use 'EdenEast/nightfox.nvim'
+  use 'arcticicestudio/nord-vim'
+  use 'rakr/vim-one'
+  use 'rmehri01/onenord.nvim'
+
 
   -- Tree File Explorer
   use 'kyazdani42/nvim-web-devicons'

@@ -37,7 +37,8 @@ local vc = vim.cmd
 -- Theme
 -- vim.g.tokyonight_style = "night"
 -- vc "colorscheme dracula"
-vc "colorscheme tokyonight"
+-- vc "colorscheme tokyonight"
+vc "colorscheme onenord"
 
 -- Make Words include -
 vc "set iskeyword+=-"

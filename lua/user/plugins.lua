@@ -81,6 +81,9 @@ return require('packer').startup(function(use)
   -- Indent Guides
   use 'lukas-reineke/indent-blankline.nvim'
 
+  -- Scroll Wheel
+  use 'petertriho/nvim-scrollbar'
+
   if packer_bootstrap then
     require('packer').sync()
   end

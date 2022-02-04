@@ -20,6 +20,7 @@ return require('packer').startup(function(use)
   use 'nvim-lua/popup.nvim'
 
   -- Theming
+  -- colorscheme
   -- use 'tribela/vim-transparent'
   use 'dracula/vim'
   use 'luisiacc/gruvbox-baby'
@@ -28,6 +29,13 @@ return require('packer').startup(function(use)
   use 'arcticicestudio/nord-vim'
   use 'rakr/vim-one'
   use 'rmehri01/onenord.nvim'
+  use 'ishan9299/modus-theme-vim'
+  use 'savq/melange'
+  use 'RRethy/nvim-base16'
+  use 'navarasu/onedark.nvim'
+  use 'NTBBloodbath/doom-one.nvim'
+  use 'rebelot/kanagawa.nvim'
+
 
 
   -- Tree File Explorer

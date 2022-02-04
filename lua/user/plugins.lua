@@ -33,8 +33,9 @@ return require('packer').startup(function(use)
   use 'savq/melange'
   use 'RRethy/nvim-base16'
   use 'navarasu/onedark.nvim'
-  use 'NTBBloodbath/doom-one.nvim'
+  -- use 'NTBBloodbath/doom-one.nvim'
   use 'rebelot/kanagawa.nvim'
+  use 'NTBBloodbath/doom-one.nvim'
 
 
 
@@ -87,7 +88,7 @@ return require('packer').startup(function(use)
   use 'akinsho/toggleterm.nvim'
 
   -- Indent Guides
-  use 'lukas-reineke/indent-blankline.nvim'
+  -- use 'lukas-reineke/indent-blankline.nvim'
 
   -- Scroll Wheel
   use 'petertriho/nvim-scrollbar'

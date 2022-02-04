@@ -22,6 +22,7 @@ local options = {
  -- spelllang = { 'en_us' },
 
   signcolumn = 'yes',
+  termguicolors = true,
 
 }
 

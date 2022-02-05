@@ -93,6 +93,9 @@ return require('packer').startup(function(use)
   -- Scroll Wheel
   use 'petertriho/nvim-scrollbar'
 
+  -- Project Manager
+   use 'ahmedkhalf/project.nvim'
+
   if packer_bootstrap then
     require('packer').sync()
   end

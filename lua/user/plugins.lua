@@ -96,6 +96,9 @@ return require('packer').startup(function(use)
   -- Project Manager
    use 'ahmedkhalf/project.nvim'
 
+  -- Formatter
+  use 'jose-elias-alvarez/null-ls.nvim'
+
   if packer_bootstrap then
     require('packer').sync()
   end

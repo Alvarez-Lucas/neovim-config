@@ -15,4 +15,4 @@ require("user.toggleterm")
 require("user.scrollbar")
 require("user.doom-one")
 require("user.projects")
-require "user.formatterconf"
+require("user.formatterconf")

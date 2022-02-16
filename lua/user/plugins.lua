@@ -103,6 +103,9 @@ return require("packer").startup(function(use)
 	-- Formatter
 	use("mhartington/formatter.nvim")
 
+	-- neogit
+	use("TimUntersberger/neogit")
+
 	if packer_bootstrap then
 		require("packer").sync()
 	end

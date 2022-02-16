@@ -101,7 +101,7 @@ return require("packer").startup(function(use)
 	use("ahmedkhalf/project.nvim")
 
 	-- Formatter
-  use "mhartington/formatter.nvim"
+	use("mhartington/formatter.nvim")
 
 	if packer_bootstrap then
 		require("packer").sync()

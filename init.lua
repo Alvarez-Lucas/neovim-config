@@ -1,17 +1,19 @@
-require "user.options"
-require "user.plugins"
-require "user.nvim-tree"
-require "user.cmp"
-require "user.lsp"
-require "user.telescope"
-require "user.treesitter"
-require "user.autopairs"
-require "user.comment"
-require "user.gitsigns"
-require "user.lualine"
-require "user.dashboard"
-require "user.toggleterm"
+require("user.options")
+require("user.plugins")
+require("user.nvim-tree")
+require("user.cmp")
+require("user.lsp")
+require("user.telescope")
+require("user.treesitter")
+require("user.autopairs")
+require("user.comment")
+require("user.gitsigns")
+require("user.lualine")
+require("user.dashboard")
+require("user.toggleterm")
 -- require "user.indent"
-require "user.scrollbar"
-require "user.doom-one"
-require "user.projects"
+require("user.scrollbar")
+require("user.doom-one")
+require("user.projects")
+require("user.formatterconf")
+require("user.neogit")

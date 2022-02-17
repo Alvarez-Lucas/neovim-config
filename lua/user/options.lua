@@ -4,31 +4,30 @@ local opts = { noremap = true, silent = true }
 -- Vim Options
 local options = {
 
-  -- Line Number Options
-  number = true,
-  relativenumber = true,
+	-- Line Number Options
+	number = true,
+	relativenumber = true,
 
-  shiftwidth = 2,
-  -- shiftwidth = 4
-  tabstop = 2,
+	shiftwidth = 2,
+	-- shiftwidth = 4
+	tabstop = 2,
 
-  scrolloff = 8,
-  sidescrolloff = 8,
-  expandtab = true,
+	scrolloff = 8,
+	sidescrolloff = 8,
+	expandtab = true,
 
-  -- mouse = "a",
+	-- mouse = "a",
 
- -- spell = true,
- -- spelllang = { 'en_us' },
+	-- spell = true,
+	-- spelllang = { 'en_us' },
 
-  signcolumn = 'yes',
-  termguicolors = true,
-
+	signcolumn = "yes",
+	termguicolors = true,
 }
 
 -- Apply options
 for option, value in pairs(options) do
-  vim.opt[option] = value
+	vim.opt[option] = value
 end
 
 -- Shorten Repeated Commands
@@ -39,21 +38,21 @@ local vc = vim.cmd
 -- vim.g.tokyonight_style = "night"
 -- vc "colorscheme dracula"
 -- vc "colorscheme tokyonight"
-vc "colorscheme doom-one"
+vc("colorscheme doom-one")
 
 -- Make Words include -
-vc "set iskeyword+=-"
+vc("set iskeyword+=-")
 
 -- 80 Mark Color Column
-vc "set colorcolumn=80"
+vc("set colorcolumn=80")
 
 -- Cursor line
 vim.wo.cursorline = true
 -- vim.optcursorline = "both"
 
 -- Keep Selection After Indent
-vc ":vnoremap < <gv"
-vc ":vnoremap > >gv"
+vc(":vnoremap < <gv")
+vc(":vnoremap > >gv")
 
 -- Remap Space As Leader Key
 km("", "<Space>", "<Nop>", opts)
@@ -90,7 +89,7 @@ km("n", "<leader>e", ":NvimTreeToggle<cr>", opts)
 -- telescope
 -- km("n", "<leader>f", "<cmd>lua require'telescope.builtin'.find_files(require('telescope.themes').get_dropdown({ previewer = false }))<cr>", opts)
 km("n", "<leader>f", "<cmd>lua require'telescope.builtin'.find_files()<cr>", opts)
-km("n", "<leader>g", "<cmd>Telescope live_grep<cr>", opts)
+km("n", "<C-g>", "<cmd>Telescope live_grep<cr>", opts)
 km("n", "<leader>b", "<cmd>Telescope git_branches<cr>", opts)
 km("n", "<leader>r", "<cmd>Telescope lsp_references<cr>", opts)
 km("n", "<leader>s", "<cmd>Telescope spell_suggest<cr>", opts)
@@ -98,3 +97,5 @@ km("n", "gs", "<cmd>Telescope git_status<cr>", opts)
 km("n", "<C-f>", "<cmd>Telescope current_buffer_fuzzy_find<cr>", opts)
 km("n", "<leader>c", "<cmd>Gitsigns preview_hunk<cr>", opts)
 km("n", "<C-s>", "<cmd>w<cr>", opts)
+
+km("n", "<leader>g", "<cmd>Neogit<cr>", opts)

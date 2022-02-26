@@ -38,7 +38,11 @@ local vc = vim.cmd
 -- vim.g.tokyonight_style = "night"
 -- vc "colorscheme dracula"
 -- vc "colorscheme tokyonight"
-vc("colorscheme doom-one")
+-- vc("colorscheme doom-one")
+vc("colorscheme base16-monokai")
+-- vc("colorscheme intellij")
+-- vc("set background=light")
+-- vc("let g:lightline.colorscheme='intellij'")
 
 -- Make Words include -
 vc("set iskeyword+=-")
@@ -96,6 +100,6 @@ km("n", "<leader>s", "<cmd>Telescope spell_suggest<cr>", opts)
 km("n", "gs", "<cmd>Telescope git_status<cr>", opts)
 km("n", "<C-f>", "<cmd>Telescope current_buffer_fuzzy_find<cr>", opts)
 km("n", "<leader>c", "<cmd>Gitsigns preview_hunk<cr>", opts)
-km("n", "<C-s>", "<cmd>w<cr>", opts)
+km("n", "<C-s>", "<cmd>w!<cr>", opts)
 
 km("n", "<leader>g", "<cmd>Neogit<cr>", opts)

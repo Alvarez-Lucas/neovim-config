@@ -27,7 +27,7 @@ return require("packer").startup(function(use)
 
 	-- Theming
 	-- colorscheme
-	-- use 'tribela/vim-transparent'
+	-- use("tribela/vim-transparent")
 	use("dracula/vim")
 	use("luisiacc/gruvbox-baby")
 	use("folke/tokyonight.nvim")
@@ -42,6 +42,9 @@ return require("packer").startup(function(use)
 	-- use 'NTBBloodbath/doom-one.nvim'
 	use("rebelot/kanagawa.nvim")
 	use("NTBBloodbath/doom-one.nvim")
+	use("tanvirtin/monokai.nvim")
+	use("chiendo97/intellij.vim")
+	use("arzg/vim-colors-xcode")
 
 	-- Tree File Explorer
 	use("kyazdani42/nvim-web-devicons")

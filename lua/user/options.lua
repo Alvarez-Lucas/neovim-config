@@ -97,9 +97,17 @@ km("n", "<C-g>", "<cmd>Telescope live_grep<cr>", opts)
 km("n", "<leader>b", "<cmd>Telescope git_branches<cr>", opts)
 km("n", "<leader>r", "<cmd>Telescope lsp_references<cr>", opts)
 km("n", "<leader>s", "<cmd>Telescope spell_suggest<cr>", opts)
-km("n", "gs", "<cmd>Telescope git_status<cr>", opts)
+km("n", "gs", "<cmd>DiffviewOpen<cr>", opts)
 km("n", "<C-f>", "<cmd>Telescope current_buffer_fuzzy_find<cr>", opts)
+
+-- git signs
 km("n", "<leader>c", "<cmd>Gitsigns preview_hunk<cr>", opts)
+
+-- save
 km("n", "<C-s>", "<cmd>w!<cr>", opts)
 
+-- vim wiki
+km("n", "<leader>d", "<cmd>VimwikiToggleListItem<cr>", opts)
+
+-- neogit
 km("n", "<leader>g", "<cmd>Neogit<cr>", opts)

@@ -27,7 +27,7 @@ return require("packer").startup(function(use)
 
 	-- Theming
 	-- colorscheme
-	-- use("tribela/vim-transparent")
+	use("tribela/vim-transparent")
 	use("dracula/vim")
 	use("luisiacc/gruvbox-baby")
 	use("folke/tokyonight.nvim")
@@ -108,6 +108,12 @@ return require("packer").startup(function(use)
 
 	-- neogit
 	use("TimUntersberger/neogit")
+
+	-- diffview
+	use("sindrets/diffview.nvim")
+
+	-- vimwiki
+	use("vimwiki/vimwiki")
 
 	if packer_bootstrap then
 		require("packer").sync()

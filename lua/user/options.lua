@@ -16,6 +16,9 @@ local options = {
 	sidescrolloff = 8,
 	expandtab = true,
 
+	ignorecase = true,
+	smartcase = true,
+
 	-- mouse = "a",
 
 	-- spell = true,
@@ -39,10 +42,18 @@ local vc = vim.cmd
 -- vc "colorscheme dracula"
 -- vc "colorscheme tokyonight"
 -- vc("colorscheme doom-one")
-vc("colorscheme base16-monokai")
+--vc("colorscheme base16-monokai")
+-- vc("colorscheme base16-gruvbox-dark-pale")
 -- vc("colorscheme intellij")
 -- vc("set background=light")
+-- vc("set background=light")
 -- vc("let g:lightline.colorscheme='intellij'")
+
+-- vim.g.vscode_style = "dark"
+-- vc("colorscheme vscode")
+
+vc("let ayucolor='dark'")
+vc("colorscheme ayu")
 
 -- Make Words include -
 vc("set iskeyword+=-")

@@ -53,6 +53,7 @@ return require("packer").startup(function(use)
 	-- use("rose-pine/neovim")
 	-- use 'NTBBloodbath/doom-one.nvim'
 	-- use("catppuccin/nvim")
+	use("ray-x/starry.nvim")
 
 	-- Tree File Explorer
 	use("kyazdani42/nvim-web-devicons")

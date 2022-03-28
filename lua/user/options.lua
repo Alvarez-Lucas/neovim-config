@@ -52,8 +52,10 @@ local vc = vim.cmd
 -- vim.g.vscode_style = "dark"
 -- vc("colorscheme vscode")
 
-vc("let ayucolor='dark'")
-vc("colorscheme ayu")
+vc("colorscheme mariana")
+
+-- vc("let ayucolor='dark'")
+-- vc("colorscheme ayu")
 
 -- Make Words include -
 vc("set iskeyword+=-")
